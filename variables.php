@@ -1,5 +1,5 @@
 <?php
-require "./components/header.php";  echo $heading="<h2>Variables</h2>";
+require "./components/header.php";  echo $heading='<h2 style="color: #333;">Variables</h2>';
 
 # VARIABLES
 $first_name = "Allwell";

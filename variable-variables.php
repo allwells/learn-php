@@ -1,20 +1,13 @@
 <?php
-require "./components/header.php";  echo $heading="<h2>Variable Variables</h2>";
+require "./components/header.php";  echo $heading='<h2 style="color: #333;">Variable Variables</h2>';
 
 $foo = "bar"; // foo has value "bar"
 $$foo = "data"; // bar has value "data"
-echo "\$foo:\t";
-echo $foo; //prints bar
-echo "\n";
+echo "<p>\$foo: ";
+echo $foo . "</p>"; //prints bar
 
-echo "\${\$foo}:\t";
-echo ${$foo}; //prints data
-echo "\n";
+echo "<p>\$\$foo: ";
+echo $$foo . "</p>"; //prints data
 
-echo "\$\$foo:\t";
-echo $$foo; //prints data
-echo "\n";
-
-echo "\$bar:\t";
-echo $bar; //prints data
-echo "\n";
+echo "<p>\$bar: ";
+echo $bar . "</p>"; //prints data
